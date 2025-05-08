@@ -1,4 +1,4 @@
-# Onet SDK
+# Onet
 
 Onet is a lightweight SDK for logging HTTP requests and responses in your iOS application. It provides tools to debug network calls and view logs in a user-friendly interface.
 
