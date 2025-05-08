@@ -2,6 +2,13 @@
 
 Onet is a lightweight SDK for logging HTTP requests and responses in your iOS application. It provides tools to debug network calls and view logs in a user-friendly interface.
 
+
+## Preview
+
+![Simulator Screenshot - iPhone 16 Pro - 2025-05-08 at 19 05 12](https://github.com/user-attachments/assets/a836bdbe-e439-44e6-9c78-0a1fc4bc4734)
+
+
+
 ## Features
 
 - Log HTTP requests and responses.
@@ -12,9 +19,11 @@ Onet is a lightweight SDK for logging HTTP requests and responses in your iOS ap
 ## Installation
 
 1. Swift Package Manager.
-File -> Swift Packages -> Add Package Dependency
-Enter package URL: https://github.com/nugrahaning-w/OnetLib, and select the latest release.
-<img width="420" alt="image" src="https://github.com/user-attachments/assets/be902531-c5a1-4438-b7d7-7cb25dd2dcc4" />
+
+   File -> Swift Packages -> Add Package Dependency
+   Enter package URL: https://github.com/nugrahaning-w/OnetLib, and select the latest release.
+
+   <img width="420" alt="image" src="https://github.com/user-attachments/assets/be902531-c5a1-4438-b7d7-7cb25dd2dcc4" />
 
 
 ## Usage
@@ -64,7 +73,7 @@ Onet.showLogs()
 ```
 
 This will present a `LogViewController` with a table view of all logged requests and responses.
-I recommend triggering showLogs() through a specific action, such as shaking the device or another intentional gesture.
+I recommend triggering `showLogs()` through a specific action, such as shaking the device or another intentional gesture.
 
 ```swift
 override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
