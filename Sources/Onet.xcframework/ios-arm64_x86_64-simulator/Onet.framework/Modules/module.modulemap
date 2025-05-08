@@ -1,0 +1,6 @@
+framework module Onet {
+  umbrella header "Onet.h"
+  export *
+
+  module * { export * }
+}

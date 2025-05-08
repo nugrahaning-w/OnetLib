@@ -1,0 +1,406 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "Onet",
+    "printedName": "Onet",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Onet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Onet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Onet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Onet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Onet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Onet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Onet",
+        "printedName": "Onet",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(debugMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4OnetAAC9configure9debugModeySb_tFZ",
+            "mangledName": "$s4OnetAAC9configure9debugModeySb_tFZ",
+            "moduleName": "Onet",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createURLSessionTask",
+            "printedName": "createURLSessionTask(for:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4OnetAAC20createURLSessionTask3for10completiony10Foundation10URLRequestV_yAF4DataVSg_So13NSURLResponseCSgs5Error_pSgtctFZ",
+            "mangledName": "$s4OnetAAC20createURLSessionTask3for10completiony10Foundation10URLRequestV_yAF4DataVSg_So13NSURLResponseCSgs5Error_pSgtctFZ",
+            "moduleName": "Onet",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showLogs",
+            "printedName": "showLogs()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4OnetAAC8showLogsyyFZ",
+            "mangledName": "$s4OnetAAC8showLogsyyFZ",
+            "moduleName": "Onet",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearLogs",
+            "printedName": "clearLogs()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4OnetAAC9clearLogsyyFZ",
+            "mangledName": "$s4OnetAAC9clearLogsyyFZ",
+            "moduleName": "Onet",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkDebugStatus",
+            "printedName": "checkDebugStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4OnetAAC16checkDebugStatusyyFZ",
+            "mangledName": "$s4OnetAAC16checkDebugStatusyyFZ",
+            "moduleName": "Onet",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4OnetAAC",
+        "mangledName": "$s4OnetAAC",
+        "moduleName": "Onet",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/Entity\/LogData.swift",
+      "kind": "StringLiteral",
+      "offset": 154,
+      "length": 9,
+      "value": "\"Success\""
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/Entity\/LogData.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 7,
+      "value": "\"Error\""
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/Utility\/LogManager.swift",
+      "kind": "Array",
+      "offset": 165,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 296,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 356,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 17,
+      "value": "\"Request Headers\""
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 518,
+      "length": 14,
+      "value": "\"Request Body\""
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 558,
+      "length": 13,
+      "value": "\"Status Code\""
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 597,
+      "length": 18,
+      "value": "\"Response Headers\""
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 641,
+      "length": 15,
+      "value": "\"Response Body\""
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 20,
+      "value": "\"LogTableViewHeader\""
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewHeader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 317,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewHeader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 426,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/View\/LogTableViewHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 505,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/ViewController\/LogViewController.swift",
+      "kind": "Array",
+      "offset": 184,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/ViewController\/LogViewController.swift",
+      "kind": "Array",
+      "offset": 232,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ajinugrahaningwidhi\/Documents\/Repo\/Onet\/Onet\/Onet.swift",
+      "kind": "BooleanLiteral",
+      "offset": 147,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
