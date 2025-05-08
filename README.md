@@ -8,13 +8,14 @@ Onet is a lightweight SDK for logging HTTP requests and responses in your iOS ap
 - View logs in a table view with expandable sections.
 - Support for error and success responses.
 - Dynamic cell height for detailed log previews.
-- Compatible with multiple iOS versions.
 
 ## Installation
 
-1. Clone the repository or add it as a submodule to your project.
-2. Add the `Onet.xcframework` to your Xcode project.
-3. Ensure the framework is linked in your target's "Frameworks, Libraries, and Embedded Content" section.
+1. Swift Package Manager.
+File -> Swift Packages -> Add Package Dependency
+Enter package URL: https://github.com/nugrahaning-w/OnetLib, and select the latest release.
+<img width="420" alt="image" src="https://github.com/user-attachments/assets/be902531-c5a1-4438-b7d7-7cb25dd2dcc4" />
+
 
 ## Usage
 
@@ -28,11 +29,16 @@ import Onet
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Onet.configure(debugMode: true) // Enable debug mode
+        #if DEBUG
+        Onet.configure(debugMode: true)
+        #else
+        Onet.configure(debugMode: false)
+        #endif
         return true
     }
 }
 ```
+Ensure that the Onet configuration is enabled only in debug mode to maintain the security of your app in production.
 
 ### 2. Log HTTP Requests and Responses
 
@@ -58,6 +64,17 @@ Onet.showLogs()
 ```
 
 This will present a `LogViewController` with a table view of all logged requests and responses.
+I recommend triggering showLogs() through a specific action, such as shaking the device or another intentional gesture.
+
+```swift
+override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+    if motion == .motionShake {
+        Onet.checkDebugStatus()
+        Onet.showLogs()
+    }
+}
+```
+
 
 ### 4. Clear Logs
 
@@ -77,32 +94,15 @@ Onet.checkDebugStatus()
 
 ## Example
 
-Here is a complete example:
+You can find an example implementation of this SDK in the following repository:
+https://github.com/nugrahaning-w/OnetDemo
 
-```swift
-import Onet
-
-let request = URLRequest(url: URL(string: "https://example.com")!)
-Onet.createURLSessionTask(for: request) { data, response, error in
-    if let error = error {
-        print("Error: \(error.localizedDescription)")
-    } else {
-        print("Response received")
-    }
-}
-
-// Show logs
-Onet.showLogs()
-
-// Clear logs
-Onet.clearLogs()
-```
 
 ## Requirements
 
-- iOS 13.0 or later.
+- iOS 15.0 or later.
 - Swift 5.0 or later.
 
-## License
+## Note
+This project is open source. Feel free to provide feedback or contribute to the library. You can visit the repository here: [Onet GitHub Repository](https://github.com/nugrahaning-w/Onet). or reach out to me directly at nugrahaning.a.w@gmail.com.
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
